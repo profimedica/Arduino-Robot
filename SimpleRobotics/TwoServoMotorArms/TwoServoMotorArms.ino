@@ -1,19 +1,23 @@
-/* Sweep
- by BARRAGAN <http://barraganstudio.com>
- This example code is in the public domain.
-
- modified 8 Nov 2013
- by Scott Fitzgerald
- http://www.arduino.cc/en/Tutorial/Sweep
+/* Cumpanasu Florin
+ *  Some nice moves of a 2 axis head
+ *  Just connect the vertical axe servo and horizontal axe servo
+ *  Build for 180 degree servos
+ *  On Funduino(Asduino) 
+ *  Amtel atmega328p Xplained mini
+ *  AVRISP Mkll programmer
+ * GitHub: https://github.com/profimedica 
+ * StackOverflow: http://stackoverflow.com/users/1001199/profimedica
+ * VisualStudio: https://profimedica.visualstudio.com/
+ * LinkdIn: https://www.linkedin.com/in/florincumpanasu
+ * Painting: https://www.facebook.com/paintalbum
 */
 
 #include <Servo.h>
 
-Servo myservoVertical;  // create servo object to control a servo
-Servo myservoOrizontal;  // create servo object to control a servo
-// twelve servo objects can be created on most boards
+Servo myservoVertical;
+Servo myservoOrizontal;
 
-int pos = 0;    // variable to store the servo position
+int pos = 0;
 
 void setup() {
   myservoVertical.attach(3);  // attaches the servo on pin 3 to the servo object
@@ -142,4 +146,3 @@ void loop() {
     }
   }
 }
-
